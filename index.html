@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VermiBangla Academy — কেঁচো থেকে জৈব সার, শিখুন ধাপে ধাপে</title>
+<meta name="description" content="বাংলাদেশে ভার্মিকম্পোস্ট বা কেঁচো সার উৎপাদন শেখার সম্পূর্ণ বাংলা প্ল্যাটফর্ম — একদম শুরু থেকে বাণিজ্যিক খামার পর্যন্ত।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= APP SHELL ================= -->
+<div class="app">
+
+  <!-- ---------- SIDEBAR ---------- -->
+  <aside class="sidebar" id="sidebar" aria-label="প্রধান নেভিগেশন">
+    <div class="sidebar-brand">
+      <span class="brand-icon" aria-hidden="true">🌱</span>
+      <div>
+        <strong>VermiBangla</strong>
+        <small>Academy</small>
+      </div>
+    </div>
+
+    <nav class="side-nav">
+      <a href="#/dashboard" class="nav-link" data-page="dashboard"><span aria-hidden="true">🏠</span> ড্যাশবোর্ড</a>
+
+      <p class="nav-group">শেখার মডিউল</p>
+      <a href="#/intro" class="nav-link" data-page="intro"><span aria-hidden="true">1️⃣</span> ভার্মিকম্পোস্ট পরিচিতি</a>
+      <a href="#/worms" class="nav-link" data-page="worms"><span aria-hidden="true">2️⃣</span> কেঁচো সংগ্রহ</a>
+      <a href="#/bed" class="nav-link" data-page="bed"><span aria-hidden="true">3️⃣</span> খামার ও বেড তৈরি</a>
+      <a href="#/gobor" class="nav-link" data-page="gobor"><span aria-hidden="true">4️⃣</span> গোবর প্রস্তুতি</a>
+      <a href="#/food" class="nav-link" data-page="food"><span aria-hidden="true">5️⃣</span> কেঁচোর খাবার</a>
+      <a href="#/environment" class="nav-link" data-page="environment"><span aria-hidden="true">6️⃣</span> আদর্শ পরিবেশ</a>
+      <a href="#/breeding" class="nav-link" data-page="breeding"><span aria-hidden="true">7️⃣</span> বংশবিস্তার</a>
+      <a href="#/care" class="nav-link" data-page="care"><span aria-hidden="true">8️⃣</span> পরিচর্যা ক্যালেন্ডার</a>
+      <a href="#/problems" class="nav-link" data-page="problems"><span aria-hidden="true">9️⃣</span> সমস্যা ও সমাধান</a>
+      <a href="#/harvest" class="nav-link" data-page="harvest"><span aria-hidden="true">🔟</span> সার সংগ্রহ</a>
+
+      <p class="nav-group">উৎপাদন ও ব্যবসা</p>
+      <a href="#/production" class="nav-link" data-page="production"><span aria-hidden="true">📈</span> উৎপাদন পরিকল্পনা</a>
+      <a href="#/business" class="nav-link" data-page="business"><span aria-hidden="true">💰</span> ব্যবসা ও আর্থিক</a>
+      <a href="#/marketing" class="nav-link" data-page="marketing"><span aria-hidden="true">🛒</span> বাজারজাতকরণ</a>
+      <a href="#/farmlog" class="nav-link" data-page="farmlog"><span aria-hidden="true">📒</span> ফার্ম লগ</a>
+
+      <p class="nav-group">সহায়ক</p>
+      <a href="#/learning" class="nav-link" data-page="learning"><span aria-hidden="true">🎯</span> শেখার পথ</a>
+      <a href="#/glossary" class="nav-link" data-page="glossary"><span aria-hidden="true">📖</span> অভিধান ও FAQ</a>
+      <a href="#/sources" class="nav-link" data-page="sources"><span aria-hidden="true">🔍</span> তথ্যসূত্র ও নিরাপত্তা</a>
+    </nav>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ---------- MAIN ---------- -->
+  <div class="main">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <button class="icon-btn" id="menuBtn" aria-label="মেনু খুলুন">☰</button>
+
+      <div class="search-wrap">
+        <input type="search" id="globalSearch" placeholder="খুঁজুন: খাবার, সমস্যা, শব্দ, পাঠ…" aria-label="সাইটে খুঁজুন" autocomplete="off">
+        <div class="search-results" id="searchResults" role="listbox" hidden></div>
+      </div>
+
+      <button class="icon-btn" id="printBtn" title="প্রিন্ট করুন" aria-label="প্রিন্ট">🖨</button>
+      <button class="icon-btn" id="themeToggle" title="ডার্ক মোড" aria-label="ডার্ক মোড চালু/বন্ধ">🌙</button>
+    </header>
+
+    <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb"></nav>
+
+    <main id="content">
+
+      <!-- ================= DASHBOARD ================= -->
+      <section class="page active" id="page-dashboard" data-page="dashboard" data-title="ড্যাশবোর্ড">
+
+        <div class="hero">
+          <div>
+            <h1>স্বাগতম, শুভেচ্ছা! 🌿</h1>
+            <p class="lead">কেঁচো থেকে জৈব সার — <strong>শিখুন ধাপে ধাপে</strong>। একদম শূন্য থেকে শুরু করে নিজের ছোট খামার, আর সেখান থেকে বাণিজ্যিক উৎপাদন পর্যন্ত পুরো পথটি এখানে সাজানো হয়েছে।</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" id="startBtn">শুরু করুন →</button>
+              <a class="btn btn-ghost" href="#/farmlog">📒 আজকের ফার্ম লগ</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">🪱</div>
+        </div>
+
+        <!-- STATS -->
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span class="stat-label">মোট পাঠ</span>
+            <span class="stat-value" id="statTotal">০</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">সম্পন্ন</span>
+            <span class="stat-value" id="statDone">০</span>
+          </div>
+          <div class="stat-card wide">
+            <span class="stat-label">শেখার অগ্রগতি</span>
+            <div class="progress"><div class="progress-fill" id="statBar" style="width:0%"></div></div>
+            <span class="stat-value small" id="statPct">০%</span>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <!-- TODAY TASKS -->
+          <div class="card">
+            <h2>✅ আজকের কাজ</h2>
+            <p class="muted small">প্রতিদিনের এই পাঁচটি কাজই আপনার বেডকে সুস্থ রাখে। টিক দিলে আজকের তারিখে সংরক্ষিত হবে।</p>
+            <label class="check"><input type="checkbox" data-key="d1" data-daily="1"> বেডের তাপমাত্রা পর্যবেক্ষণ</label>
+            <label class="check"><input type="checkbox" data-key="d2" data-daily="1"> অতিরিক্ত শুষ্ক বা ভেজা অবস্থা দেখা</label>
+            <label class="check"><input type="checkbox" data-key="d3" data-daily="1"> দুর্গন্ধ আছে কি না পরীক্ষা</label>
+            <label class="check"><input type="checkbox" data-key="d4" data-daily="1"> পানি জমেছে কি না দেখা</label>
+            <label class="check"><input type="checkbox" data-key="d5" data-daily="1"> কেঁচো অস্বাভাবিকভাবে বেরিয়ে আসছে কি না দেখা</label>
+            <div class="mt"><a class="btn btn-small btn-ghost" href="#/care">পুরো পরিচর্যা ক্যালেন্ডার →</a></div>
+          </div>
+
+          <!-- ENV QUICK INFO -->
+          <div class="card">
+            <h2>🌡️ কেঁচো পালনের পরিবেশ</h2>
+            <ul class="kv">
+              <li><span>তাপমাত্রা</span><strong>প্রায় ১৫–৩০°সে</strong></li>
+              <li><span>আর্দ্রতা</span><strong>প্রায় ৬০–৮০%</strong></li>
+              <li><span>pH</span><strong>প্রায় ৬.৫–৭.৫</strong></li>
+              <li><span>অক্সিজেন</span><strong>বাতাস চলাচল অবাধ</strong></li>
+            </ul>
+            <p class="note warn">⚠️ এই সংখ্যাগুলো <strong>সাধারণ নির্দেশনা</strong>, কোনো কঠোর নিয়ম নয়। প্রজাতি, আর্দ্রতা মাপার পদ্ধতি, বেডের গভীরতা ও ঋতু অনুযায়ী উপযুক্ত সীমা বদলাতে পারে। নিজের বেডের অবস্থা দেখে সিদ্ধান্ত নিন।</p>
+            <a class="btn btn-small btn-ghost" href="#/environment">পরিবেশ মনিটরিং →</a>
+          </div>
+        </div>
+
+        <!-- CAUTIONS -->
+        <div class="card danger-card">
+          <h2>⚠️ গুরুত্বপূর্ণ সতর্কতা</h2>
+          <ul class="list-dot">
+            <li>কাঁচা গোবর সরাসরি বেডে দেবেন না — তাপ ও অ্যামোনিয়া কেঁচো মেরে ফেলতে পারে।</li>
+            <li>বেডে যেন কোনোভাবেই পানি জমে না থাকে; নিচে ড্রেনেজ অবশ্যই রাখুন।</li>
+            <li>কীটনাশকযুক্ত বা রাসায়নিক-দূষিত কোনো বর্জ্য কখনো দেবেন না।</li>
+            <li>নতুন কোনো খাবার প্রথমে <strong>অল্প পরিমাণে</strong> পরীক্ষা করুন, তারপর পরিমাণ বাড়ান।</li>
+            <li>প্রজাতি নিশ্চিত না হলে ধরে নিন সেটি যাচাই করা প্রয়োজন।</li>
+          </ul>
+        </div>
+
+        <!-- QUICK ACCESS -->
+        <h2 class="section-title">দ্রুত প্রবেশ</h2>
+        <div class="quick-grid">
+          <a class="quick-card" href="#/intro"><span>📘</span>ভার্মিকম্পোস্ট কী</a>
+          <a class="quick-card" href="#/worms"><span>🪱</span>কেঁচো চেনা ও কেনা</a>
+          <a class="quick-card" href="#/bed"><span>🧱</span>বেড প্ল্যানার</a>
+          <a class="quick-card" href="#/food"><span>🍎</span>খাদ্য তালিকা</a>
+          <a class="quick-card" href="#/problems"><span>🩺</span>সমস্যা সমাধান</a>
+          <a class="quick-card" href="#/business"><span>💵</span>লাভ-ক্ষতি হিসাব</a>
+        </div>
+
+        <div class="grid2">
+          <!-- LAST VISITED -->
+          <div class="card">
+            <h2>🕘 সর্বশেষ দেখা পাঠ</h2>
+            <p id="lastLesson" class="lead-small">এখনো কোনো পাঠ দেখা হয়নি।</p>
+            <button class="btn btn-small btn-primary" id="resumeBtn" hidden>চালিয়ে যান →</button>
+          </div>
+
+          <!-- SETUP CHECKLIST -->
+          <div class="card">
+            <h2>🧰 খামার সেটআপ চেকলিস্ট</h2>
+            <label class="check"><input type="checkbox" data-key="setup1"> জায়গা নির্ধারণ ও পরিমাপ</label>
+            <label class="check"><input type="checkbox" data-key="setup2"> ছাউনি ও বৃষ্টির পানি থেকে সুরক্ষা</label>
+            <label class="check"><input type="checkbox" data-key="setup3"> বেড তৈরি ও ড্রেনেজ ছিদ্র</label>
+            <label class="check"><input type="checkbox" data-key="setup4"> গোবর প্রাক-প্রস্তুতির স্তূপ তৈরি</label>
+            <label class="check"><input type="checkbox" data-key="setup5"> কেঁচো সংগ্রহের উৎস যাচাই</label>
+            <label class="check"><input type="checkbox" data-key="setup6"> বেডিং ও প্রথম অল্প খাবার প্রস্তুত</label>
+            <div class="progress thin mt"><div class="progress-fill" id="setupBar" style="width:0%"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 1 ================= -->
+      <section class="page" id="page-intro" data-page="intro" data-lesson="intro"
+               data-title="Module 1 · Vermicomposting পরিচিতি">
+
+        <div class="card">
+          <h2>ভার্মিকম্পোস্ট (Vermicompost) কী?</h2>
+          <p>ভার্মিকম্পোস্ট হলো সেই জৈব সার, যা <strong>কেঁচোর সাহায্যে</strong> পচনশীল জৈব বর্জ্য (গোবর, সবজির উচ্ছিষ্ট, শুকনো পাতা) খাওয়ানো ও হজম করানোর মাধ্যমে তৈরি হয়। কেঁচো খাবার খায়, হজম করে এবং যে মল ত্যাগ করে তাকে বলে <strong>কেঁচোর কাস্ট (Vermicast)</strong>। এই কাস্টের সঙ্গে বেডিং উপাদান ও আংশিক পচা জৈব পদার্থ মিশে যা তৈরি হয়, সেটাই ভার্মিকম্পোস্ট।</p>
+          <p>ভালো ভার্মিকম্পোস্ট সাধারণত গাঢ় বাদামি, দানাদার, আর্দ্র কিন্তু ভেজা নয় এবং মাটির মতো গন্ধযুক্ত হয়। এর গন্ধ পচা বা তীব্র অ্যামোনিয়ার মতো হলে বোঝা যায় প্রক্রিয়াটি ঠিকভাবে চলছে না।</p>
+        </div>
+
+        <div class="card">
+          <h2>কেঁচো কীভাবে জৈব পদার্থকে সারসমৃদ্ধ উপাদানে রূপান্তর করে?</h2>
+          <ol class="steps">
+            <li><strong>খাদ্য গ্রহণ:</strong> কেঁচো নরম, আংশিক পচা জৈব পদার্থ গিলে ফেলে।</li>
+            <li><strong>হজম:</strong> পরিপাকতন্ত্রে থাকা অণুজীব ও এনজাইম জটিল পদার্থ ভাঙতে সাহায্য করে।</li>
+            <li><strong>নিঃসরণ:</strong> কাস্ট আকারে বেরিয়ে আসে, যেখানে পুষ্টি উপাদান গাছের জন্য সহজলভ্য রূপে থাকে।</li>
+            <li><strong>মিশ্রণ ও পরিপক্বতা:</strong> কাস্টের সঙ্গে বেডিং ও অবশিষ্ট জৈব পদার্থ মিশে হিউমাসসমৃদ্ধ, দানাদার সার তৈরি হয়।</li>
+          </ol>
+          <p class="note">এই প্রক্রিয়ায় উপকারী অণুজীবের সক্রিয়তা বাড়ে। তবে <strong>নির্দিষ্ট পুষ্টিমান (NPK) সব ভার্মিকম্পোস্টে একই হয় না</strong> — উপাদান, প্রজাতি ও ব্যবস্থাপনার ওপর নির্ভর করে। নিশ্চিত পুষ্টিমান জানতে ল্যাব পরীক্ষা প্রয়োজন।</p>
+        </div>
+
+        <div class="card">
+          <h2>সাধারণ কম্পোস্ট ও ভার্মিকম্পোস্টের পার্থক্য</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>দিক</th><th>সাধারণ কম্পোস্ট</th><th>ভার্মিকম্পোস্ট</th></tr></thead>
+              <tbody>
+                <tr><td>প্রক্রিয়া</td><td>অণুজীবভিত্তিক, তাপ উৎপন্ন হয়</td><td>কেঁচো ও অণুজীবের সম্মিলিত কাজ, তাপ কম</td></tr>
+                <tr><td>সময়</td><td>সাধারণত বেশি সময় লাগে</td><td>তুলনামূলক দ্রুত হতে পারে</td></tr>
+                <tr><td>গঠন</td><td>মোটা, অসম</td><td>সূক্ষ্ম, দানাদার</td></tr>
+                <tr><td>ব্যবস্থাপনা</td><td>মাঝে মাঝে উল্টাতে হয়</td><td>তাপমাত্রা, আর্দ্রতা ও খাবার নিয়ন্ত্রণ জরুরি</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>ভার্মিকম্পোস্ট, গোবর সার ও রাসায়নিক সার</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>দিক</th><th>ভার্মিকম্পোস্ট</th><th>পচানো গোবর</th><th>রাসায়নিক সার</th></tr></thead>
+              <tbody>
+                <tr><td>উৎস</td><td>কেঁচোprocessed জৈব পদার্থ</td><td>গবাদিপশুর গোবর</td><td>শিল্পে উৎপাদিত</td></tr>
+                <tr><td>মাটির গঠন</td><td>উন্নত করতে সহায়ক</td><td>সহায়ক</td><td>সরাসরি গঠন উন্নয়নে ভূমিকা কম</td></tr>
+                <tr><td>পুষ্টি</td><td>মাঝারি, ধীরে ছাড়ে</td><td>তুলনামূলক কম ঘনত্ব</td><td>উচ্চ ঘনত্ব, দ্রুত কার্যকর</td></tr>
+                <tr><td>অতিরিক্ত ব্যবহারের ঝুঁকি</td><td>কম, তবে অপরিমিত ব্যবহারে সমস্যা হতে পারে</td><td>কম</td><td>অতিরিক্ত হলে মাটি ও পানির ক্ষতি</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note warn">কোনো সারের নির্দিষ্ট পুষ্টিমান (যেমন ২-১-১) নিশ্চিতভাবে বলার আগে <strong>ল্যাব পরীক্ষা</strong> প্রয়োজন। অনুমানভিত্তিক সংখ্যা প্রচার করা ঠিক নয়।</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h2>✅ সুবিধা</h2>
+            <ul class="list-dot">
+              <li>মাটির জৈব পদার্থ ও পানিধারণক্ষমতা বাড়াতে সাহায্য করে।</li>
+              <li>পুষ্টি ধীরে ছাড়ে, তাই অপচয় কম।</li>
+              <li>গৃহস্থালি ও খামারের জৈব বর্জ্যের ভালো ব্যবহার নিশ্চিত করে।</li>
+              <li>ছোট জায়গায় শুরু করা সম্ভব।</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>⚠️ সীমাবদ্ধতা</h2>
+            <ul class="list-dot">
+              <li>তাপমাত্রা ও আর্দ্রতার প্রতি সংবেদনশীল — অবহেলায় কেঁচো মরতে পারে।</li>
+              <li>কাঁচা গোবর, কীটনাশক ও অতিরিক্ত পানি মারাত্মক ক্ষতিকর।</li>
+              <li>রাসায়নিক সারের মতো দ্রুত বড় পুষ্টি-ঘাটতি পূরণে উপযুক্ত নয়।</li>
+              <li>শুরুতে ধৈর্য ও নিয়মিত পর্যবেক্ষণ দরকার।</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>কোন ফসলে ব্যবহার করা যায়?</h2>
+          <p>সবজি, ফল, ফুল, মসলা, বাড়ির টবগাছ — প্রায় সব ধরনের ফসলে ব্যবহার করা যায়। ধান-সহ মাঠফসলেও ব্যবহারযোগ্য, তবে পরিমাণ ও প্রয়োগপদ্ধতি ফসল ও মাটির অবস্থা অনুযায়ী বদলাবে।</p>
+          <h3>মাটিতে ব্যবহারের নিয়ম</h3>
+          <ul class="list-dot">
+            <li><strong>রোপণের আগে:</strong> গর্ত বা বেডের মাটির সঙ্গে ভালোভাবে মিশিয়ে দিন।</li>
+            <li><strong>উপরি প্রয়োগ:</strong> গাছের গোড়া থেকে একটু দূরে বৃত্তাকারে ছড়িয়ে হালকা মাটি চাপা দিন।</li>
+            <li><strong>পরিমাণ:</strong> ফসল ও মাটির অবস্থা অনুযায়ী পরিমাণ বদলায় — স্থানীয় কৃষি সম্প্রসারণ কর্মকর্তার পরামর্শ নিন।</li>
+            <li>সরাসরি বীজের গায়ে লেপ্টে দেবেন না; ভালোভাবে মিশিয়ে ব্যবহার করুন।</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>কেঁচো সার ও তরল সার এক জিনিস নয়</h2>
+          <p>অনেকে <strong>ভার্মিকম্পোস্ট</strong> ও <strong>ভার্মিওয়াশ (Vermiwash)</strong> এক ভাবেন — এরা এক নয়।</p>
+          <ul class="list-dot">
+            <li><strong>ভার্মিকম্পোস্ট:</strong> কঠিন, দানাদার জৈব সার, মাটিতে মেশানো হয়।</li>
+            <li><strong>ভার্মিওয়াশ:</strong> বেড থেকে গড়িয়ে আসা তরল (এবং parfois ধুয়ে নেওয়া নির্যাস), যা সাধারণত পাতলা করে স্প্রে বা সেচে ব্যবহার হয়।</li>
+            <li><strong>লিচেট (Leachate):</strong> অতিরিক্ত ভেজা বেড থেকে বেরোনো তরল — এটি ভার্মিওয়াশের সমান নয়, এবং এতে ক্ষতিকর যৌগ থাকতে পারে।</li>
+          </ul>
+          <p class="note warn">ভার্মিওয়াশ ব্যবহারে সতর্কতা: অতিরিক্ত মাত্রায় না দেওয়া, খোলা কাটা-ছেঁড়া অংশে সরাসরি স্প্রে না করা, এবং পচা গন্ধযুক্ত তরল ব্যবহার না করা। কোথাও ব্যবহারের আগে ছোট জায়গায় পরীক্ষা করুন।</p>
+        </div>
+
+        <div class="card callout">
+          <h2>🧪 বাস্তব উদাহরণ</h2>
+          <p>রহিম সাহেবের বাড়ির পেছনে ২০ বর্গফুট জায়গা আছে এবং দুটি গরু আছে। তিনি প্রথমে দুটি ছোট বেড বানিয়ে ২ কেজি কেঁচো দিয়ে শুরু করেন। শুরুতে তিনি গোবর ২৫–৩০ দিন প্রাক-কম্পোস্ট করেন, তারপর অল্প করে খাবার দেন। এই ধীর গতির সূচনাই পরে বড় খামারের ভিত্তি হয়।</p>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 2 ================= -->
+      <section class="page" id="page-worms" data-page="worms" data-lesson="worms"
+               data-title="Module 2 · Red Wiggler কেঁচো সংগ্রহ">
+
+        <div class="card">
+          <h2>Red Wiggler কী?</h2>
+          <p>ভার্মিকম্পোস্টিং-এ সবচেয়ে বেশি ব্যবহৃত প্রজাতি হলো <strong>Eisenia fetida</strong> (এবং সংশ্লিষ্টভাবে <strong>Eisenia andrei</strong>)। এগুলো সাধারণত "রেড উইগলার", "টাইগার ওয়ার্ম" বা "কম্পোস্ট ওয়ার্ম" নামে পরিচিত। এরা জৈব পদার্থের ভেতরে থাকতে পছন্দ করে, দ্রুত খাদ্য ভাঙতে সাহায্য করে এবং সীমিত জায়গায় ভালোভাবে বাঁচতে পারে।</p>
+          <p class="note">বাংলাদেশে অনেক সময় স্থানীয়ভাবে বিভিন্ন নামে কেঁচো বিক্রি হয়। নাম শুনে নিশ্চিত হবেন না — <strong>প্রজাতি যাচাই করা প্রয়োজন</strong>।</p>
+        </div>
+
+        <div class="card">
+          <h2>কেন এই কেঁচো ব্যবহার করা হয়?</h2>
+          <ul class="list-dot">
+            <li>জৈব পদার্থের ভেতরে থাকতে অভ্যস্ত — বেডে ভালোভাবে খাপ খায়।</li>
+            <li>খাদ্য গ্রহণের হার তুলনামূলক ভালো।</li>
+            <li>ঘনত্বে থাকতে পারে, ফলে ছোট জায়গায় অনেক কেঁচো রাখা সম্ভব।</li>
+            <li>প্রজনন দ্রুত হতে পারে — তবে তা পরিবেশ ও ব্যবস্থাপনার ওপর নির্ভরশীল, কোনো নির্দিষ্ট সংখ্যা নিশ্চিত নয়।</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Red Wiggler ও সাধারণ মাটির কেঁচোর পার্থক্য</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>বৈশিষ্ট্য</th><th>Red Wiggler (Eisenia spp.)</th><th>সাধারণ মাটির কেঁচো</th></tr></thead>
+              <tbody>
+                <tr><td>বাসস্থান</td><td>পচনশীল জৈব পদার্থের স্তূপ</td><td>মাটির গভীর স্তর</td></tr>
+                <tr><td>রং</td><td>লালচে-বাদামি, ডোরাকাটা</td><td>সাধারণত গোলাপি-ধূসর</td></tr>
+                <tr><td>কম্পোস্টিং উপযোগিতা</td><td>উচ্চ</td><td>সীমিত</td></tr>
+                <tr><td>বেডে টিকে থাকা</td><td>ভালো</td><td>প্রায়ই কমে যায়</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h2>কেনার আগে যা যাচাই করবেন</h2>
+            <label class="check"><input type="checkbox" data-key="w1"> প্রজাতির নাম স্পষ্টভাবে বলা হচ্ছে কি না</label>
+            <label class="check"><input type="checkbox" data-key="w2"> কেঁচো জীবিত ও সক্রিয় কি না</label>
+            <label class="check"><input type="checkbox" data-key="w3"> বেডে পানি জমে আছে কি না</label>
+            <label class="check"><input type="checkbox" data-key="w4"> দুর্গন্ধ বা মৃত কেঁচো আছে কি না</label>
+            <label class="check"><input type="checkbox" data-key="w5"> বিক্রেতা পরিচিত ও যাচাইযোগ্য কি না</label>
+          </div>
+          <div class="card">
+            <h2>জীবিত ও সুস্থ কেঁচো চেনার উপায়</h2>
+            <ul class="list-dot">
+              <li>হাত দিলে বা আলো পড়লে দ্রুত নড়াচড়া করে।</li>
+              <li>শরীর টানটান, শুকনো বা কুঁচকানো নয়।</li>
+              <li>গায়ে আঠালো তরল বা অস্বাভাবিক দাগ নেই।</li>
+              <li>মৃত কেঁচো দেখতে গাঢ়, শুকনো ও গতিহীন হয়।</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>কোকুন ও ছোট কেঁচো চেনা</h2>
+          <ul class="list-dot">
+            <li><strong>কোকুন (Cocoon):</strong> খুব ছোট, ডিমের মতো, হালকা রঙের — সাধারণত কয়েক মিলিমিটার।</li>
+            <li><strong>বাচ্চা কেঁচো:</strong> সূক্ষ্ম, প্রায় স্বচ্ছ, প্রাপ্তবয়স্কের মতো স্পষ্ট বলয় (Clitellum) থাকে না।</li>
+            <li>কোকুন বা বাচ্চা থাকা মানে প্রজনন ঘটছে — তবে সংখ্যা দিয়ে প্রমাণ করা যায় না।</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>বিক্রেতাকে যে প্রশ্নগুলো করবেন</h2>
+          <ol class="steps">
+            <li>কেঁচোর প্রজাতির নাম কী? কীভাবে নিশ্চিত করলেন?</li>
+            <li>কত দিন ধরে পালন করছেন, খাদ্য কী দেন?</li>
+            <li>বেডে গোবর প্রাক-কম্পোস্ট করা ছিল কি?</li>
+            <li>কোনো রোগ বা সমস্যা দেখা দিয়েছিল কি?</li>
+            <li>পরিবহনের সময় কীভাবে নিরাপদ রাখব?</li>
+            <li>নতুন বেডে ছাড়ার পর প্রথম কয়েক দিন কী করব?</li>
+          </ol>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h2>নিরাপদে পরিবহন</h2>
+            <ul class="list-dot">
+              <li>বাতাস চলাচল করে এমন পাত্র ব্যবহার করুন।</li>
+              <li>রোদ ও তীব্র গরম থেকে দূরে রাখুন।</li>
+              <li>ভ্রমণের সময় দীর্ঘক্ষণ বন্ধ বাক্সে রাখবেন না।</li>
+              <li>বেডিং উপাদান (আর্দ্র কাগজ/পাতা) সঙ্গে রাখুন।</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>নতুন জায়গায় মানিয়ে নেওয়া</h2>
+            <ol class="steps">
+              <li>প্রথমে বেডিং প্রস্তুত করুন — আর্দ্রতা মাঝারি রাখুন।</li>
+              <li>কেঁচো ছেড়ে দিন, সাথে একটু পুরনো বেডিং থাকলে ভালো।</li>
+              <li>প্রথম ২–৩ দিন একদম কম খাবার দিন।</li>
+              <li>প্রতিদিন একবার দেখুন — কেঁচো বেরিয়ে যাচ্ছে কি না, গন্ধ হচ্ছে কি না।</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>🇧🇩 বাংলাদেশে কেঁচো সংগ্রহের স্থানীয় গাইড</h2>
+          <p class="note warn">এই ওয়েবসাইটে <strong>কোনো নির্দিষ্ট বিক্রেতার নাম, ফোন নম্বর, ঠিকানা বা মূল্য দেওয়া হয়নি</strong> — কারণ সেগুলো যাচাই না করে প্রকাশ করা দায়িত্বজ্ঞানহীন হবে। নিচের পথগুলো ব্যবহার করে নিজে যাচাই করে সংগ্রহ করুন।</p>
+          <ul class="list-dot">
+            <li><strong>স্থানীয় ভার্মিকম্পোস্ট খামার:</strong> জেলা/উপজেলায় ছোট বাণিজ্যিক খামার থাকে; সরাসরি গিয়ে দেখে কিনুন।</li>
+            <li><strong>কৃষি উদ্যোক্তা:</strong> স্থানীয় কৃষি মেলায় বা কৃষক দলে খোঁজ নিন।</li>
+            <li><strong>কৃষি সম্প্রসারণ অধিদপ্তর (DAE):</strong> উপজেলা কৃষি অফিসে যোগাযোগ করুন — স্থানীয়ভাবে প্রশিক্ষণ ও সূত্রের তথ্য পাওয়া যায়।</li>
+            <li><strong>কৃষি বিশ্ববিদ্যালয়/কলেজ:</strong> সংশ্লিষ্ট বিভাগে অনুসন্ধান করলে প্রজাতি যাচাইয়ে সাহায্য মিলতে পারে।</li>
+            <li><strong>যাচাইয়ের পদ্ধতি:</strong> একাধিক সূত্রে জিজ্ঞাসা করুন, নিজে দেখে কিনুন, প্রথমে অল্প পরিমাণ নিয়ে পরীক্ষা করুন।</li>
+          </ul>
+          <label class="check mt"><input type="checkbox" data-key="w6"> আমি প্রজাতি ও বিক্রেতা নিজে যাচাই করেছি</label>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 3 ================= -->
+      <section class="page" id="page-bed" data-page="bed" data-lesson="bed"
+               data-title="Module 3 · খামার ও বেড তৈরি">
+
+        <div class="card">
+          <h2>তিন ধরনের সেটআপ</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>ধরন</th><th>জায়গা (আনুমানিক)</th><th>বৈশিষ্ট্য</th></tr></thead>
+              <tbody>
+                <tr><td>A. বাড়িভিত্তিক</td><td>কয়েক বর্গফুট</td><td>ক্রেট/টব, কম খরচ, নিজের ব্যবহারের জন্য</td></tr>
+                <tr><td>B. মাঝারি</td><td>কয়েক বর্গমিটার</td><td>ইট/সিমেন্ট বেড, নিয়মিত উৎপাদন</td></tr>
+                <tr><td>C. বাণিজ্যিক</td><td>শেড/বড় জায়গা</td><td>একাধিক বেড, শ্রম ও বাজার পরিকল্পনা</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>প্রতিটি সেটআপে যা বিবেচনা করবেন</h2>
+          <ul class="list-dot">
+            <li><strong>জায়গা:</strong> বেডের চারপাশে হাঁটার ও কাজ করার জায়গা রাখুন।</li>
+            <li><strong>ছাউনি:</strong> সরাসরি রোদ ও বৃষ্টি থেকে সুরক্ষা দিন, তবে বাতাস চলাচল বন্ধ করবেন না।</li>
+            <li><strong>বাতাস চলাচল:</strong> বেডের পাশে ফাঁক রাখুন, আর্দ্র বাতাস বের হওয়ার পথ থাকতে হবে।</li>
+            <li><strong>বৃষ্টির পানি:</strong> ছাদ বা পলিথিন দিয়ে ঢেকে দিন, তবে পুরো বন্ধ করবেন না।</li>
+            <li><strong>ড্রেনেজ:</strong> বেডের নিচে ঝাঁঝরি/ছিদ্র ও ঢালু ব্যবস্থা রাখুন।</li>
+            <li><strong>উপকরণ:</strong> ইট-সিমেন্ট (টেকসই, ভারী), প্লাস্টিক ক্রেট (সহজ, বহনযোগ্য), বাঁশ/কাঠ (সস্তা, কম টেকসই)।</li>
+            <li><strong>নিচে যা রাখবেন:</strong> মোটা নুড়ি বা ইটের টুকরো — অতিরিক্ত পানি বের হওয়ার পথ।</li>
+            <li><strong>পিঁপড়া ও শিকারি:</strong> পায়ে পানি/তেলের বৃত্ত, ঢাকনা ও পরিষ্কার পরিবেশ।</li>
+          </ul>
+          <p class="note">বেডের মাপ কোনো বাধ্যতামূলক একক নয়। জায়গা, উপকরণ, বায়ু চলাচল ও উৎপাদন পরিকল্পনা অনুযায়ী নিজের মাপ ঠিক করুন।</p>
+        </div>
+
+        <div class="card">
+          <h2>🧱 বেড প্ল্যানার</h2>
+          <p class="muted small">দৈর্ঘ্য, প্রস্থ ও উচ্চতা দিন — আনুমানিক আয়তন ও পৃষ্ঠতল দেখাবে।</p>
+          <div class="grid3">
+            <label>দৈর্ঘ্য (ফুট)<input type="number" id="bedL" min="0" step="0.1" value="4"></label>
+            <label>প্রস্থ (ফুট)<input type="number" id="bedW" min="0" step="0.1" value="2"></label>
+            <label>উচ্চতা (ফুট)<input type="number" id="bedH" min="0" step="0.1" value="1"></label>
+          </div>
+          <button class="btn btn-primary" id="bedCalcBtn">হিসাব করুন</button>
+          <div class="result" id="bedResult" hidden></div>
+          <p class="note warn">⚠️ আয়তন দিয়ে সরাসরি উৎপাদন বা কেঁচোর ধারণক্ষমতা নির্ধারণ করা যায় না। এটি শুধু উপাদানের পরিমাণ আন্দাজ করতে সাহায্য করে।</p>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 4 ================= -->
+      <section class="page" id="page-gobor" data-page="gobor" data-lesson="gobor"
+               data-title="Module 4 · গোবর প্রস্তুতির সম্পূর্ণ নিয়ম">
+
+        <div class="card">
+          <h2>গরুর গোবর কেন ব্যবহার করা হয়?</h2>
+          <p>গোবর সহজলভ্য, জৈব পদার্থে ভরপুর এবং কেঁচোর জন্য উপযুক্ত খাদ্যbase তৈরি করে। তবে <strong>কাঁচা গোবর সরাসরি বেডে দেওয়া যায় না</strong>।</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card danger-card">
+            <h2>কাঁচা গোবর দিলে কী হয়?</h2>
+            <ul class="list-dot">
+              <li><strong>তাপমাত্রা বাড়ে:</strong> পচনের সময় তাপ তৈরি হয়, যা কেঁচোর সহনসীমার বাইরে যেতে পারে।</li>
+              <li><strong>অ্যামোনিয়া:</strong> অতিরিক্ত অ্যামোনিয়া কেঁচোর শ্বাস-প্রশ্বাস ও ত্বকের জন্য ক্ষতিকর।</li>
+              <li><strong>দুর্গন্ধ:</strong> পচা গন্ধ কেঁচোকে দূরে সরিয়ে দেয়।</li>
+              <li><strong>পোকা-মাছি:</strong> কাঁচা গোবরে মাছি ও অন্যান্য পোকা বাড়ে।</li>
+              <li><strong>লবণ ও দূষণ:</strong> কখনো কখনো লবণ বা রাসায়নিকের ঝুঁকি থাকে।</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>প্রাক-কম্পোস্টিং (Pre-composting) কী</h2>
+            <p>গোবরকে বেডে দেওয়ার আগে আলাদা স্তূপে রেখে আংশিক পচিয়ে নেওয়াই প্রাক-কম্পোস্টিং। এতে তাপ ও অ্যামোনিয়ার ঝুঁকি অনেকটাই কমে যায়।</p>
+            <ol class="steps">
+              <li>ছায়াযুক্ত, পানি জমে না এমন জায়গা বেছে নিন।</li>
+              <li>গোবর স্তূপ করুন (উঁচু না, মাঝারি)।</li>
+              <li>আর্দ্রতা মাঝারি রাখুন — হাত চেপে ধরলে হালকা ভেজা, পানি ঝরবে না।</li>
+              <li>প্রতি সপ্তাহে অন্তত একবার উল্টে দিন যাতে বাতাস ঢোকে।</li>
+              <li>তাপমাত্রা কমে পরিবেশের কাছাকাছি এলে, গন্ধ কমে গেলে ও গঠন দানাদার হলে ব্যবহারের জন্য প্রস্তুত।</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>তাপমাত্রা, আর্দ্রতা ও গন্ধ পর্যবেক্ষণ</h2>
+          <ul class="list-dot">
+            <li>স্তূপের ভেতরে থার্মোমিটার ঢুকিয়ে তাপমাত্রা দেখুন (বাইরের তাপমাত্রা নয়)।</li>
+            <li>প্রথমে তাপ বাড়বে, তারপর কমে আসবে — কমে স্থির হলে প্রক্রিয়া অনেকটা সম্পন্ন।</li>
+            <li>আর্দ্রতা পরীক্ষা: হাতের মুঠোয় নিয়ে চাপ দিন — পানি ঝরলে বেশি ভেজা, পুরো শুকনো হলে কম।</li>
+            <li>গন্ধ: মাটির মতো গন্ধ ভালো; তীব্র অ্যামোনিয়া বা পচা গন্ধ মানে আরও সময় দরকার।</li>
+            <li>গঠন: দানাদার, সহজে ভাঙা — আঠালো বা কাদাময় নয়।</li>
+          </ul>
+          <p class="note warn"><strong>শুধু দিন গুনে সিদ্ধান্ত নেবেন না।</strong> বাস্তব অবস্থা — তাপ, গন্ধ, গঠন, আর্দ্রতা — দেখেই সিদ্ধান্ত নিন।</p>
+        </div>
+
+        <div class="card">
+          <h2>✅ Gobor Readiness Checklist</h2>
+          <label class="check"><input type="checkbox" data-key="g1"> তাপমাত্রা পরিবেশের কাছাকাছি এবং স্থিতিশীল</label>
+          <label class="check"><input type="checkbox" data-key="g2"> তীব্র অ্যামোনিয়া বা পচা গন্ধ নেই</label>
+          <label class="check"><input type="checkbox" data-key="g3"> অতিরিক্ত গরম নয়</label>
+          <label class="check"><input type="checkbox" data-key="g4"> আর্দ্রতা উপযুক্ত (মুঠোয় চাপলে পানি ঝরে না)</label>
+          <label class="check"><input type="checkbox" data-key="g5"> গঠন ও পচন পর্যবেক্ষণ করা হয়েছে</label>
+          <label class="check"><input type="checkbox" data-key="g6"> কাঁচা/রাসায়নিক-দূষিত বর্জ্য নেই</label>
+        </div>
+
+        <div class="card">
+          <h2>ধীরে ধীরে কেঁচোর সঙ্গে পরিচয়</h2>
+          <ol class="steps">
+            <li>বেডের এক কোণে অল্প পরিমাণ প্রস্তুত গোবর রাখুন।</li>
+            <li>২৪ ঘণ্টা পর দেখুন — কেঁচো সেখানে যাচ্ছে কি না।</li>
+            <li>কেঁচো স্বাভাবিক থাকলে পরিমাণ বাড়ান।</li>
+            <li>অস্বাভাবিক আচরণ দেখলে গোবর সরিয়ে আবার অপেক্ষা করুন।</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 5 ================= -->
+      <section class="page" id="page-food" data-page="food" data-lesson="food"
+               data-title="Module 5 · কেঁচোর খাবার">
+
+        <div class="card">
+          <h2>খাদ্য তালিকা (Searchable Database)</h2>
+          <p class="muted small">নাম দিয়ে খুঁজুন বা শ্রেণি বেছে নিন। প্রতিটি খাবারের প্রস্তুতি, ঝুঁকি ও ব্যবহারের নিয়ম দেখানো হয়েছে।</p>
+          <div class="filter-row">
+            <input type="search" id="foodSearch" placeholder="খাবারের নাম লিখুন…">
+            <select id="foodFilter">
+              <option value="all">সব শ্রেণি</option>
+              <option value="A">A · সাধারণত উপযোগী</option>
+              <option value="B">B · সতর্কতার সঙ্গে</option>
+              <option value="C">C · এড়িয়ে চলুন</option>
+            </select>
+          </div>
+          <div id="foodList" class="food-list"></div>
+        </div>
+
+        <div class="card">
+          <h2>⚖️ Feeding Calculator</h2>
+          <p class="muted small">এটি কোনো নিশ্চিত “feeding rate” নয় — বরং আপনার বর্তমান অবস্থা বুঝতে সাহায্য করার হিসাব।</p>
+          <div class="grid3">
+            <label>বেডে কেঁচো (কেজি)<input type="number" id="feedWorm" min="0" step="0.1" value="1"></label>
+            <label>বর্তমানে দেওয়া খাবার (কেজি)<input type="number" id="feedNow" min="0" step="0.1" value="0.5"></label>
+            <label>আগের খাবার অবশিষ্ট (কেজি)<input type="number" id="feedLeft" min="0" step="0.1" value="0.1"></label>
+          </div>
+          <button class="btn btn-primary" id="feedCalcBtn">পরামর্শ দেখুন</button>
+          <div class="result" id="feedResult" hidden></div>
+        </div>
+
+        <div class="card">
+          <h2>সাধারণ নিয়ম</h2>
+          <ul class="list-dot">
+            <li>নতুন খাবার সবসময় <strong>অল্প পরিমাণে</strong> দিয়ে পরীক্ষা করুন।</li>
+            <li>খাবার বেডের এক পাশে দিন, যাতে কেঁচো নিজের সুবিধামতো যেতে পারে।</li>
+            <li>অবশিষ্ট খাবার বেশি জমে থাকলে পরিমাণ কমান।</li>
+            <li>কুচি করে দিলে পচন দ্রুত হয় এবং কেঁচোর খাওয়া সহজ হয়।</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 6 ================= -->
+      <section class="page" id="page-environment" data-page="environment" data-lesson="environment"
+               data-title="Module 6 · কেঁচোর জন্য আদর্শ পরিবেশ">
+
+        <div class="card">
+          <h2>মূল বিষয়গুলো</h2>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>বিষয়</th><th>সাধারণ নির্দেশনা</th><th>মন্তব্য</th></tr></thead>
+              <tbody>
+                <tr><td>তাপমাত্রা</td><td>প্রায় ১৫–৩০°সে</td><td>অতিরিক্ত গরমে কেঁচো বেড ছাড়তে পারে</td></tr>
+                <tr><td>আর্দ্রতা</td><td>প্রায় ৬০–৮০%</td><td>মাপার পদ্ধতিভেদে ফল আলাদা হতে পারে</td></tr>
+                <tr><td>pH</td><td>প্রায় ৬.৫–৭.৫</td><td>অম্লীয় খাবার বেশি হলে সমস্যা</td></tr>
+                <tr><td>অক্সিজেন</td><td>বাতাস চলাচল অবাধ</td><td>বেড বেশি চাপা দেবেন না</td></tr>
+                <tr><td>আলো</td><td>পরোক্ষ আলো</td><td>সরাসরি কড়া রোদ নয়</td></tr>
+                <tr><td>ঘনত্ব</td><td>বেডের আকার অনুযায়ী</td><td>অতিরিক্ত কেঁচো দিলে খাদ্য সংকট</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note warn">একক সীমা সব পরিস্থিতিতে প্রযোজ্য নয়। প্রজাতি, আর্দ্রতা মাপার পদ্ধতি ও বেডের অবস্থা অনুযায়ী উপযুক্ত সীমা বদলায়।</p>
+        </div>
+
+        <div class="card">
+          <h2>📊 Environmental Monitoring Dashboard</h2>
+          <p class="muted small">প্রতিদিনের মাপ এখানে লিখে রাখুন। সব ডেটা আপনার ব্রাউজারেই সংরক্ষিত থাকে।</p>
+          <div class="grid3">
+            <label>তারিখ<input type="date" id="envDate"></label>
+            <label>তাপমাত্রা (°সে)<input type="number" id="envTemp" step="0.1" placeholder="যেমন ২৫"></label>
+            <label>আর্দ্রতা (%)<input type="number" id="envMoist" step="1" placeholder="যেমন ৭০"></label>
+            <label>pH<input type="number" id="envPh" step="0.1" placeholder="যেমন ৭"></label>
+            <label>কেঁচোর আচরণ<select id="envBehavior"><option>স্বাভাবিক</option><option>অস্বাভাবিক নড়াচড়া</option><option>বেড ছাড়ছে</option><option>কম সক্রিয়</option></select></label>
+            <label>গন্ধ<select id="envSmell"><option>মাটির মতো</option><option>হালকা গন্ধ</option><option>তীব্র/pচা গন্ধ</option></select></label>
+            <label>খাবারের অবস্থা<select id="envFeed"><option>স্বাভাবিক</option><option>অতিরিক্ত জমে আছে</option><option>শুকিয়ে গেছে</option><option>পচছে</option></select></label>
+          </div>
+          <button class="btn btn-primary" id="envSaveBtn">রেকর্ড সংরক্ষণ করুন</button>
+          <div class="result" id="envMsg" hidden></div>
+          <div class="table-wrap mt">
+            <table>
+              <thead><tr><th>তারিখ</th><th>তাপ</th><th>আর্দ্রতা</th><th>pH</th><th>আচরণ</th><th>গন্ধ</th><th>খাবার</th></tr></thead>
+              <tbody id="envTableBody"></tbody>
+            </table>
+          </div>
+          <button class="btn btn-small btn-ghost" id="envClearBtn">সব রেকর্ড মুছুন</button>
+        </div>
+
+        <div class="grid2">
+          <div class="card"><h2>শীতের পরিচর্যা</h2><ul class="list-dot"><li>বেড উষ্ণ রাখতে মোটা আচ্ছাদন ব্যবহার করুন।</li><li>খাবার কম দিন, বেশি পচাবেন না।</li><li>ঠান্ডায় সক্রিয়তা কমতে পারে — জোর করবেন না।</li></ul></div>
+          <div class="card"><h2>গরমের পরিচর্যা</h2><ul class="list-dot"><li>ছায়া ও বাতাস চলাচল বাড়ান।</li><li>আর্দ্রতা ধরে রাখুন, তবে পানি জমতে দেবেন না।</li><li>দুপুরের কড়া রোদ এড়িয়ে চলুন।</li></ul></div>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 7 ================= -->
+      <section class="page" id="page-breeding" data-page="breeding" data-lesson="breeding"
+               data-title="Module 7 · কেঁচোর বংশবিস্তার">
+
+        <div class="card">
+          <h2>প্রজনন কীভাবে ঘটে</h2>
+          <p>প্রাপ্তবয়স্ক কেঁচোর শরীরে <strong>ক্লাইটেলাম (Clitellum)</strong> নামে একটি বলয় থাকে। প্রজননের পর কোকুন তৈরি হয়, যেখানে ডিম থাকে। অনুকূল পরিবেশে কিছুদিন পর ছোট কেঁচো বের হয়।</p>
+          <p class="note">কোনো নির্দিষ্ট সংখ্যক কোকুন বা বাচ্চার প্রতিশ্রুতি দেওয়া যায় না — প্রজাতি, পরিবেশ, খাদ্য ও ব্যবস্থাপনা সবই ভূমিকা রাখে।</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h2>🔍 কোকুন ও বাচ্চা চেনা</h2>
+            <ul class="list-dot">
+              <li>কোকুন: ছোট, ডিমের মতো, হালকা রঙ।</li>
+              <li>বাচ্চা: খুব সূক্ষ্ম, প্রায় স্বচ্ছ।</li>
+              <li>মাটি/বেডিং ভালোভাবে দেখলে এগুলো চোখে পড়ে।</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>প্রজনন কমে যাওয়ার সম্ভাব্য কারণ</h2>
+            <ul class="list-dot">
+              <li>অতিরিক্ত তাপ বা শুষ্কতা।</li>
+              <li>জলাবদ্ধতা ও বাতাসের অভাব।</li>
+              <li>অনুপযুক্ত খাবার বা অতিরিক্ত অ্যামোনিয়া।</li>
+              <li>বেডে বেশি কেঁচোর ঘনত্ব।</li>
+              <li>বারবার বিরক্ত করা বা আলোড়ন।</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>নতুন বেড তৈরি ও স্থানান্তর</h2>
+          <ol class="steps">
+            <li>নতুন বেডে প্রস্তুত গোবর ও বেডিং দিন।</li>
+            <li>পুরনো বেড থেকে কোকুনসহ বেডিংয়ের অংশ নিন।</li>
+            <li>প্রাপ্তবয়স্ক কেঁচোর কিছু অংশ নতুন বেডে দিন।</li>
+            <li>কয়েক দিন কম খাবার দিন, তারপর ধীরে বাড়ান।</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h2>🧬 Breeding Log</h2>
+          <div class="grid3">
+            <label>বেডের নাম<input type="text" id="brBed" placeholder="যেমন বেড-১"></label>
+            <label>কেঁচোর ওজন/সংখ্যা<input type="text" id="brCount" placeholder="যেমন ১.৫ কেজি / আনুমানিক"></label>
+            <label>নতুন বেড তৈরির তারিখ<input type="date" id="brDate"></label>
+            <label>কোকুন দেখা গেছে?<select id="brCocoon"><option>না</option><option>হ্যাঁ</option></select></label>
+            <label>ছোট কেঁচো দেখা গেছে?<select id="brBaby"><option>না</option><option>হ্যাঁ</option></select></label>
+            <label>নোট<input type="text" id="brNote" placeholder="পর্যবেক্ষণ লিখুন"></label>
+          </div>
+          <button class="btn btn-primary" id="brSaveBtn">লগ সংরক্ষণ করুন</button>
+          <div class="table-wrap mt">
+            <table>
+              <thead><tr><th>বেড</th><th>সংখ্যা/ওজন</th><th>তারিখ</th><th>কোকুন</th><th>বাচ্চা</th><th>নোট</th></tr></thead>
+              <tbody id="brTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 8 ================= -->
+      <section class="page" id="page-care" data-page="care" data-lesson="care"
+               data-title="Module 8 · দৈনিক, সাপ্তাহিক ও মাসিক পরিচর্যা">
+
+        <div class="card">
+          <h2>🗓️ Farm Care Calendar</h2>
+          <p class="muted small">প্রতিটি কাজ সম্পন্ন হলে টিক দিন। দৈনিক কাজ প্রতিদিন রিসেট হয়; সাপ্তাহিক ও মাসিক কাজ সংরক্ষিত থাকে।</p>
+
+          <h3>প্রতিদিন</h3>
+          <label class="check"><input type="checkbox" data-key="c1" data-daily="1"> বেডের তাপমাত্রা পর্যবেক্ষণ</label>
+          <label class="check"><input type="checkbox" data-key="c2" data-daily="1"> অতিরিক্ত শুষ্ক বা ভেজা অবস্থা দেখা</label>
+          <label class="check"><input type="checkbox" data-key="c3" data-daily="1"> দুর্গন্ধ আছে কি না পরীক্ষা</label>
+          <label class="check"><input type="checkbox" data-key="c4" data-daily="1"> পানি জমেছে কি না দেখা</label>
+          <label class="check"><input type="checkbox" data-key="c5" data-daily="1"> কেঁচো অস্বাভাবিকভাবে বেরিয়ে আসছে কি না দেখা</label>
+
+          <h3>সাপ্তাহিক</h3>
+          <label class="check"><input type="checkbox" data-key="wk1"> খাবারের অবশিষ্টাংশ পরীক্ষা</label>
+          <label class="check"><input type="checkbox" data-key="wk2"> প্রয়োজন অনুযায়ী খাবার যোগ</label>
+          <label class="check"><input type="checkbox" data-key="wk3"> ড্রেনেজ ও বেডের অবস্থা পরীক্ষা</label>
+          <label class="check"><input type="checkbox" data-key="wk4"> পিঁপড়া ও অন্যান্য শিকারি পর্যবেক্ষণ</label>
+          <label class="check"><input type="checkbox" data-key="wk5"> আর্দ্রতা ও তাপমাত্রার রেকর্ড পর্যালোচনা</label>
+
+          <h3>মাসিক</h3>
+          <label class="check"><input type="checkbox" data-key="mo1"> কেঁচোর বৃদ্ধি পর্যবেক্ষণ</label>
+          <label class="check"><input type="checkbox" data-key="mo2"> নতুন বেডের প্রয়োজন নির্ধারণ</label>
+          <label class="check"><input type="checkbox" data-key="mo3"> উৎপাদন ও খাবারের হিসাব</label>
+          <label class="check"><input type="checkbox" data-key="mo4"> সার প্রস্তুতির অগ্রগতি পর্যালোচনা</label>
+          <label class="check"><input type="checkbox" data-key="mo5"> খামারের আয়-ব্যয়ের রেকর্ড আপডেট</label>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 9 ================= -->
+      <section class="page" id="page-problems" data-page="problems" data-lesson="problems"
+               data-title="Module 9 · রোগ, সমস্যা ও সমাধান">
+
+        <div class="card">
+          <h2>🩺 Troubleshooting Center</h2>
+          <p class="muted small">সমস্যা খুঁজুন বা তালিকা থেকে বেছে নিন। সাদা ছত্রাক দেখলেই রোগ ধরে নেবেন না — কারণ নিশ্চিত না হলে সম্ভাব্য কারণ হিসেবে বিবেচনা করুন।</p>
+          <input type="search" id="probSearch" placeholder="সমস্যা লিখুন, যেমন: দুর্গন্ধ, পিঁপড়া…">
+          <div id="probList" class="prob-list"></div>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 10 ================= -->
+      <section class="page" id="page-harvest" data-page="harvest" data-lesson="harvest"
+               data-title="Module 10 · ভার্মিকম্পোস্ট সংগ্রহ ও প্রস্তুতকরণ">
+
+        <div class="card">
+          <h2>কখন সংগ্রহ করবেন?</h2>
+          <p>যখন বেডের বেশিরভাগ উপাদান গাঢ় বাদামি, দানাদার ও গন্ধহীন হয়ে যায়, এবং খাবারের কাঁচা অংশ খুব কম থাকে — তখন সংগ্রহ করা যায়।</p>
+          <p class="note warn">শুধু রং বা গন্ধ দেখে সিদ্ধান্ত নেবেন না। গঠন, আর্দ্রতা ও অবশিষ্ট কাঁচা বর্জ্য — সবকিছু মিলিয়ে দেখুন।</p>
+        </div>
+
+        <div class="card">
+          <h2>ধাপে ধাপে সংগ্রহ</h2>
+          <ol class="steps">
+            <li>খাবার দেওয়া কিছুদিন বন্ধ রাখুন যাতে কেঁচো খাবার খুঁজে শেষ করে।</li>
+            <li>বেডের উপরের স্তর সরিয়ে একপাশে রাখুন।</li>
+            <li>আলোর সাহায্যে কেঁচো নিচে বা একপাশে সরে যায় — তখন উপর থেকে সার তুলুন।</li>
+            <li>ছাঁকনি দিয়ে ছেলে নিন, বড় টুকরো ও কাঁচা বর্জ্য আলাদা করুন।</li>
+            <li>সার অতিরিক্ত শুকিয়ে ফেলবেন না; হালকা আর্দ্র রাখুন।</li>
+            <li>পরিষ্কার পাত্রে, ছায়ায় সংরক্ষণ করুন।</li>
+          </ol>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h2>প্যাকেজিংয়ের আগে যা পরীক্ষা করবেন</h2>
+            <label class="check"><input type="checkbox" data-key="h1"> কাঁচা বর্জ্য আলাদা করা হয়েছে</label>
+            <label class="check"><input type="checkbox" data-key="h2"> দুর্গন্ধ নেই</label>
+            <label class="check"><input type="checkbox" data-key="h3"> অতিরিক্ত ভেজা নয়</label>
+            <label class="check"><input type="checkbox" data-key="h4"> পোকা/মাছি নেই</label>
+            <label class="check"><input type="checkbox" data-key="h5"> ওজন ও ব্যাচ নম্বর লিখে রাখা হয়েছে</label>
+          </div>
+          <div class="card">
+            <h2>সংরক্ষণ</h2>
+            <ul class="list-dot">
+              <li>ছায়াযুক্ত, শুষ্ক জায়গায় রাখুন।</li>
+              <li>সরাসরি রোদ ও বৃষ্টি থেকে দূরে।</li>
+              <li>মাটি থেকে উঁচুতে রাখলে আর্দ্রতা কম নিয়ন্ত্রণে আসে না।</li>
+              <li>দীর্ঘদিন রাখলে মাঝে মাঝে পরীক্ষা করুন।</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 11 ================= -->
+      <section class="page" id="page-production" data-page="production" data-lesson="production"
+               data-title="Module 11 · উৎপাদন পরিকল্পনা ও ক্যালকুলেটর">
+
+        <div class="card">
+          <h2>📈 Production Planner</h2>
+          <p class="muted small">আপনার পরিকল্পনার একটি সারসংক্ষেপ তৈরি করুন। এটি পূর্বানুমান নয়, বরং হিসাব ও পরিকল্পনার কাঠামো।</p>
+          <div class="grid3">
+            <label>বেডের সংখ্যা<input type="number" id="prodBeds" min="0" value="2"></label>
+            <label>প্রতি বেডে কেঁচো (কেজি)<input type="number" id="prodWorm" min="0" step="0.1" value="1"></label>
+            <label>দৈনিক খাবার (কেজি)<input type="number" id="prodFeed" min="0" step="0.1" value="1"></label>
+            <label>গোবর প্রাপ্যতা (কেজি/মাস)<input type="number" id="prodGobor" min="0" value="100"></label>
+            <label>উৎপাদনের লক্ষ্য (কেজি/মাস)<input type="number" id="prodGoal" min="0" value="20"></label>
+            <label>জায়গা (বর্গফুট)<input type="number" id="prodSpace" min="0" value="40"></label>
+          </div>
+          <button class="btn btn-primary" id="prodCalcBtn">পরিকল্পনা তৈরি করুন</button>
+          <div class="result" id="prodResult" hidden></div>
+          <p class="note warn">⚠️ সার উৎপাদনের নির্ভুল পূর্বানুমান সম্ভব নয় — খাদ্যের গুণ, প্রজাতি, আবহাওয়া ও ব্যবস্থাপনা ভিন্ন হলে ফল ভিন্ন হয়। এই হিসাবকে <strong>পরিকল্পনার সহায়ক</strong> হিসেবে ব্যবহার করুন, নিশ্চিত ফলাফল হিসেবে নয়।</p>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 12 ================= -->
+      <section class="page" id="page-business" data-page="business" data-lesson="business"
+               data-title="Module 12 · ব্যবসা ও আর্থিক পরিকল্পনা">
+
+        <div class="card">
+          <h2>💰 Business Calculator</h2>
+          <p class="muted small">সব ঘরে নিজের বাস্তব সংখ্যা লিখুন। আমরা কোনো বাজারমূল্য নিজে থেকে বসাই না — স্থানীয় বাজার যাচাই করে নিজে লিখুন।</p>
+
+          <h3>এককালীন বিনিয়োগ (Fixed Cost)</h3>
+          <div class="grid3">
+            <label>কেঁচো কেনার খরচ (৳)<input type="number" class="biz-fixed" min="0" value="0"></label>
+            <label>বেড তৈরির খরচ (৳)<input type="number" class="biz-fixed" min="0" value="0"></label>
+            <label>শেড/ছাউনি খরচ (৳)<input type="number" class="biz-fixed" min="0" value="0"></label>
+            <label>অন্যান্য এককালীন খরচ (৳)<input type="number" class="biz-fixed" min="0" value="0"></label>
+          </div>
+
+          <h3>নিয়মিত পরিচালন খরচ (Variable Cost)</h3>
+          <div class="grid3">
+            <label>গোবর পরিবহন (৳)<input type="number" class="biz-var" min="0" value="0"></label>
+            <label>শ্রমিক খরচ (৳)<input type="number" class="biz-var" min="0" value="0"></label>
+            <label>পানি ও বিদ্যুৎ (৳)<input type="number" class="biz-var" min="0" value="0"></label>
+            <label>প্যাকেজিং (৳)<input type="number" class="biz-var" min="0" value="0"></label>
+            <label>পরিবহন (৳)<input type="number" class="biz-var" min="0" value="0"></label>
+            <label>অন্যান্য নিয়মিত খরচ (৳)<input type="number" class="biz-var" min="0" value="0"></label>
+          </div>
+
+          <h3>বিক্রয়</h3>
+          <div class="grid3">
+            <label>বিক্রয়যোগ্য সারের পরিমাণ (কেজি)<input type="number" id="bizQty" min="0" value="0"></label>
+            <label>প্রতি কেজি বিক্রয়মূল্য (৳)<input type="number" id="bizPrice" min="0" value="0"></label>
+          </div>
+
+          <button class="btn btn-primary" id="bizCalcBtn">হিসাব করুন</button>
+          <div class="result" id="bizResult" hidden></div>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 13 ================= -->
+      <section class="page" id="page-marketing" data-page="marketing" data-lesson="marketing"
+               data-title="Module 13 · বাজারজাতকরণ">
+
+        <div class="card">
+          <h2>সম্ভাব্য ক্রেতা</h2>
+          <ul class="list-dot">
+            <li><strong>স্থানীয় নার্সারি:</strong> টবগাছ ও চারা বিক্রেতারা নিয়মিত জৈব সার ব্যবহার করেন।</li>
+            <li><strong>কৃষক:</strong> সবজি ও ফলচাষিরা মাটির স্বাস্থ্যের জন্য আগ্রহী।</li>
+            <li><strong>ছাদবাগানপ্রেমী:</strong> শহরে টবগাছের সংখ্যা বাড়ছে।</li>
+            <li><strong>কৃষি উপকরণের দোকান:</strong> রিসেলার হিসেবে কাজ করতে পারে।</li>
+            <li><strong>অনলাইন বিক্রয়:</strong> ফেসবুক পেজ, গ্রুপ, লোকাল ডেলিভারি।</li>
+            <li><strong>কৃষি উদ্যোক্তা নেটওয়ার্ক:</strong> স্থানীয় কৃষি মেলা ও দল।</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>যোগাযোগের উদাহরণ</h2>
+          <p class="example">“আসসালামু আলাইকুম, আমি স্থানীয়ভাবে কেঁচো সার উৎপাদন করি। আপনি চাইলে অল্প পরিমাণ নিয়ে নিজের গাছে পরীক্ষা করে দেখতে পারেন।”</p>
+          <p class="note">সরাসরি ফলন বৃদ্ধি বা রোগ প্রতিরোধের নিশ্চিত দাবি করবেন না। পরীক্ষা ছাড়া পুষ্টিমান বা নির্দিষ্ট ফলনের দাবি করা যায় না।</p>
+        </div>
+
+        <div class="card">
+          <h2>প্যাকেজিং ও লেবেল</h2>
+          <ul class="list-dot">
+            <li>পণ্যের নাম ও ওজন</li>
+            <li>ব্যাচ নম্বর ও উৎপাদনের তারিখ</li>
+            <li>সংরক্ষণ নির্দেশনা</li>
+            <li>প্রস্তুতকারকের যোগাযোগ</li>
+            <li>স্থানীয়ভাবে প্রযোজ্য নিয়ম ও অনুমোদন যাচাই করুন</li>
+          </ul>
+          <label class="check mt"><input type="checkbox" data-key="m1"> স্থানীয় নিয়ম ও অনুমোদন যাচাই করেছি</label>
+          <label class="check"><input type="checkbox" data-key="m2"> লেবেলে সঠিক তথ্য দিয়েছি</label>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 14 ================= -->
+      <section class="page" id="page-farmlog" data-page="farmlog" data-lesson="farmlog"
+               data-title="Module 14 · দৈনিক Farm Log">
+
+        <div class="card">
+          <h2>📒 ফার্ম লগ</h2>
+          <p class="muted small">প্রতিদিনের রেকর্ড আপনার খামারের সবচেয়ে বড় সম্পদ। সব ডেটা আপনার ব্রাউজারে সংরক্ষিত হয়।</p>
+          <div class="grid3">
+            <label>তারিখ<input type="date" id="logDate"></label>
+            <label>বেড নম্বর<input type="text" id="logBed" placeholder="যেমন ১"></label>
+            <label>কেঁচোর আনুমানিক ওজন (কেজি)<input type="number" id="logWorm" min="0" step="0.1"></label>
+            <label>খাবারের পরিমাণ (কেজি)<input type="number" id="logFeed" min="0" step="0.1"></label>
+            <label>তাপমাত্রা (°সে)<input type="number" id="logTemp" step="0.1"></label>
+            <label>আর্দ্রতা (%)<input type="number" id="logMoist" step="1"></label>
+            <label>pH<input type="number" id="logPh" step="0.1"></label>
+            <label>সার সংগ্রহের পরিমাণ (কেজি)<input type="number" id="logHarvest" min="0" step="0.1"></label>
+            <label>পর্যবেক্ষণ<input type="text" id="logObs" placeholder="যেমন কোকুন দেখা গেছে"></label>
+            <label>সমস্যা<input type="text" id="logProblem" placeholder="যেমন পিঁপড়া"></label>
+            <label>গৃহীত ব্যবস্থা<input type="text" id="logAction" placeholder="যেমন সীমানায় পানি দেওয়া"></label>
+          </div>
+          <button class="btn btn-primary" id="logSaveBtn">রেকর্ড সংরক্ষণ করুন</button>
+          <button class="btn btn-ghost" id="logClearBtn">সব রেকর্ড মুছুন</button>
+
+          <div class="toolbar mt">
+            <button class="btn btn-small btn-ghost" id="csvExport">⬇ CSV Export</button>
+            <label class="btn btn-small btn-ghost file-btn">⬆ CSV Import<input type="file" id="csvImport" accept=".csv,text/csv" hidden></label>
+          </div>
+
+          <div class="table-wrap mt">
+            <table>
+              <thead><tr><th>তারিখ</th><th>বেড</th><th>কেঁচো</th><th>খাবার</th><th>তাপ</th><th>আর্দ্রতা</th><th>pH</th><th>পর্যবেক্ষণ</th><th>সমস্যা</th><th>ব্যবস্থা</th><th>সার</th><th></th></tr></thead>
+              <tbody id="logTableBody"></tbody>
+            </table>
+          </div>
+          <p class="note warn">⚠️ ব্রাউজারের ডেটা মুছে ফেলা হলে বা অন্য ডিভাইসে গেলে রেকর্ড হারাতে পারে। নিয়মিত CSV Export করে ব্যাকআপ রাখুন।</p>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 15 ================= -->
+      <section class="page" id="page-learning" data-page="learning" data-lesson="learning"
+               data-title="Module 15 · শেখার পথ (Learning Path)">
+
+        <div class="card">
+          <h2>চারটি ধাপ</h2>
+          <div id="learningPath" class="learning-path"></div>
+        </div>
+
+        <div class="card">
+          <h2>🧠 Self-Assessment Quiz</h2>
+          <div id="quizWrap"></div>
+        </div>
+      </section>
+
+      <!-- ================= MODULE 16 ================= -->
+      <section class="page" id="page-glossary" data-page="glossary" data-lesson="glossary"
+               data-title="Module 16 · অভিধান ও FAQ">
+
+        <div class="card">
+          <h2>📖 বাংলা–ইংরেজি অভিধান</h2>
+          <input type="search" id="glossarySearch" placeholder="শব্দ খুঁজুন…">
+          <div id="glossaryList" class="glossary-list"></div>
+        </div>
+
+        <div class="card">
+          <h2>❓ সাধারণ প্রশ্ন (FAQ)</h2>
+          <input type="search" id="faqSearch" placeholder="প্রশ্ন খুঁজুন…">
+          <div id="faqList" class="faq-list"></div>
+        </div>
+      </section>
+
+      <!-- ================= SOURCES ================= -->
+      <section class="page" id="page-sources" data-page="sources" data-title="তথ্যসূত্র ও নিরাপত্তা">
+
+        <div class="card">
+          <h2>তথ্যের নির্ভরযোগ্যতা</h2>
+          <p>এই প্ল্যাটফর্মের নির্দেশনা সাধারণ কৃষি ও কম্পোস্টিং নীতির ওপর ভিত্তি করে লেখা। যেখানে প্রযোজ্য, সেখানে বিশ্বস্ত উৎস হিসেবে বিবেচনা করা উচিত:</p>
+          <ul class="list-dot">
+            <li>বাংলাদেশ কৃষি সম্প্রসারণ অধিদপ্তর (DAE)</li>
+            <li>বাংলাদেশ কৃষি গবেষণা ইনস্টিটিউট (BARI)</li>
+            <li>বাংলাদেশ কৃষি বিশ্ববিদ্যালয় ও সংশ্লিষ্ট বিভাগ</li>
+            <li>সংশ্লিষ্ট সরকারি কৃষি প্রতিষ্ঠান</li>
+            <li>স্বীকৃত বিশ্ববিদ্যালয় ও কৃষি গবেষণা প্রকাশনা</li>
+            <li>নির্ভরযোগ্য আন্তর্জাতিক কম্পোস্টিং গবেষণা</li>
+          </ul>
+          <p class="note warn">এই ওয়েবসাইটে কোনো যাচাই-না-করা গবেষণা, লিংক, বিক্রেতা বা পরিসংখ্যান তৈরি করা হয়নি। নির্দিষ্ট তথ্য দরকার হলে উপরের প্রতিষ্ঠানের স্থানীয় অফিসে যোগাযোগ করুন।</p>
+        </div>
+
+        <div class="card">
+          <h2>নিরাপত্তা নীতি</h2>
+          <ul class="list-dot">
+            <li>কাঁচা গোবর সরাসরি ব্যবহার নিষিদ্ধ — তাপ ও অ্যামোনিয়ার ঝুঁকি।</li>
+            <li>কীটনাশকযুক্ত বা রাসায়নিক-দূষিত বর্জ্য ব্যবহার করবেন না।</li>
+            <li>বেডে অতিরিক্ত পানি জমতে দেবেন না।</li>
+            <li>আর্দ্রতা মাপার পদ্ধতিভেদে ফল আলাদা হতে পারে — একক সংখ্যাকে চূড়ান্ত ধরে নেবেন না।</li>
+            <li>প্রজাতি ও পরিবেশ অনুযায়ী ব্যবস্থাপনা পরিবর্তিত হয়।</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ---------- MOBILE BOTTOM NAV ---------- -->
+  <nav class="bottomnav" aria-label="মোবাইল নেভিগেশন">
+    <a href="#/dashboard" class="bn-link" data-page="dashboard"><span>🏠</span>হোম</a>
+    <a href="#/food" class="bn-link" data-page="food"><span>🍎</span>খাবার</a>
+    <a href="#/care" class="bn-link" data-page="care"><span>✅</span>কাজ</a>
+    <a href="#/farmlog" class="bn-link" data-page="farmlog"><span>📒</span>লগ</a>
+    <a href="#/learning" class="bn-link" data-page="learning"><span>🎯</span>শেখা</a>
+  </nav>
+</div>
+
+<!-- ================= WIZARD MODAL ================= -->
+<div class="modal" id="wizardModal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="wizardTitle">
+    <div class="modal-head">
+      <h2 id="wizardTitle">🌱 শুরু করুন — Beginner Setup Wizard</h2>
+      <button class="icon-btn" id="wizardClose" aria-label="বন্ধ করুন">✕</button>
+    </div>
+    <div class="modal-body">
+      <form id="wizardForm">
+        <label>১. খামারের জন্য কতটুকু জায়গা আছে?
+          <select name="space" required>
+            <option value="small">খুব কম (২০ বর্গফুটের কম)</option>
+            <option value="medium">মাঝারি (২০–৫০ বর্গফুট)</option>
+            <option value="large">বেশি (৫০–১০০ বর্গফুট)</option>
+            <option value="xlarge">খুব বেশি (১০০+ বর্গফুট)</option>
+          </select>
+        </label>
+        <label>২. আনুমানিক কত টাকা বিনিয়োগ করতে পারবেন?
+          <select name="budget" required>
+            <option value="low">খুব কম</option>
+            <option value="mid">মাঝারি</option>
+            <option value="high">বেশি</option>
+          </select>
+        </label>
+        <label>৩. নিজের গোবর আছে কি?
+          <select name="gobor" required>
+            <option value="yes">হ্যাঁ, নিয়মিত</option>
+            <option value="sometimes">মাঝে মাঝে</option>
+            <option value="no">না</option>
+          </select>
+        </label>
+        <label>৪. গোবর বা জৈব বর্জ্য কোথা থেকে সংগ্রহ করবেন?
+          <select name="source" required>
+            <option value="own">নিজের গবাদিপশু</option>
+            <option value="neighbor">প্রতিবেশী খামার</option>
+            <option value="market">বাজার/স্থানীয় উৎস</option>
+            <option value="unknown">এখনো নিশ্চিত নই</option>
+          </select>
+        </label>
+        <label>৫. কোথায় খামার করবেন?
+          <select name="place" required>
+            <option value="yard">বাড়ির আঙিনা</option>
+            <option value="roof">ছাদ</option>
+            <option value="shed">শেড</option>
+            <option value="land">নিজের জমি</option>
+          </select>
+        </label>
+        <label>৬. সার তৈরি করবেন কীসের জন্য?
+          <select name="purpose" required>
+            <option value="self">নিজের ব্যবহারের জন্য</option>
+            <option value="sell">বিক্রির জন্য</option>
+            <option value="both">দুটোই</option>
+          </select>
+        </label>
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary">পরিকল্পনা তৈরি করুন</button>
+          <button type="button" class="btn btn-ghost" id="wizardSkip">পরে করব</button>
+        </div>
+      </form>
+      <div id="wizardPlan" class="result" hidden></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
